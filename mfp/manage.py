@@ -2,7 +2,7 @@
 import os
 import sys
 
-print("hi")
+print("hi     ")
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mfp.settings")
     try:
