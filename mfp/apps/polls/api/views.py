@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from rest_framework import generics
-from polls.models import Question
-from polls.serializers import QuestionSerializer
+from apps.polls.models import Question
+from apps.polls.api.serializers import QuestionSerializer
 
 
 def index(request):
