@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [    
     'apps.polls.apps.PollsConfig',
+    'apps.auth.apps.AuthConfig',
     'jet.dashboard',
     'jet',
     'django.contrib.admin',

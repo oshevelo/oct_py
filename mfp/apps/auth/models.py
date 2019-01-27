@@ -8,7 +8,7 @@ class RegistrationTry(models.Model):
         to=User, related_name='registration_try',
         on_delete=models.CASCADE
     )
-    extra_data = models.Text(
+    extra_data = models.TextField(
         verbose_name="extra_data"
     )
 
