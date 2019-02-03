@@ -18,6 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^polls/', include('apps.polls.api.urls')),
+    url(r'^products/', include('apps.products.api.urls')),
     url(r'^auth/', include('apps.auth.api.urls')),
     url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
     url(r'^jet/', include('jet.urls', 'jet')),
