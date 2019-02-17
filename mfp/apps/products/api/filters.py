@@ -12,12 +12,10 @@ class ProductFilter(FilterSet):
 
     def filter_max_price(self, qs, search, value):
         value = float(value)
-        value += value* 0.05
-
+        value += value * 0.05
         return qs.filter(price__lte=value)
 
     def filter_name(self, qs, search, value):
-        print('asdasdasdas')
         return qs.filter(name__icontains=value)
 
     name = django_filters.filters.CharFilter(method='filter_name')
